@@ -18,19 +18,19 @@ public final class FileUtil {
     private FileUtil() {
     }
 
-    public static void writeText(File file, String text) {
+    public static void writeText(@NonNull File file, String text) {
         writeBytes(file, text.getBytes(), false);
     }
 
-    public static void writeText(File file, String text, boolean append) {
+    public static void writeText(@NonNull File file, String text, boolean append) {
         writeBytes(file, text.getBytes(), append);
     }
 
-    public static void writeBytes(File file, byte[] bytes) {
+    public static void writeBytes(@NonNull File file, byte[] bytes) {
         writeBytes(file, bytes, false);
     }
 
-    public static void writeBytes(File file, byte[] bytes, boolean append) {
+    public static void writeBytes(@NonNull File file, byte[] bytes, boolean append) {
         if (file.canWrite()) {
             FileOutputStream stream = null;
             try {
