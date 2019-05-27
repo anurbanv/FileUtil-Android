@@ -15,9 +15,6 @@ public final class FileUtil {
 
     private static final String TAG = "FileUtil";
 
-    private FileUtil() {
-    }
-
     public static void writeText(@NonNull File file, String text) {
         writeBytes(file, text.getBytes(), false);
     }
