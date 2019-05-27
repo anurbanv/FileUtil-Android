@@ -50,11 +50,11 @@ public final class FileUtil {
         }
     }
 
-    public static String readFileText(File file) {
+    public static String readFileText(@NonNull File file) {
         return new String(readFileBytes(file));
     }
 
-    public static byte[] readFileBytes(File file) {
+    public static byte[] readFileBytes(@NonNull File file) {
         if (file.canRead()) {
             int length = (int) file.length();
             byte[] bytes = new byte[length];
