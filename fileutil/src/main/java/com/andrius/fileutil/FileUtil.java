@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public final class FileUtil {
+public class FileUtil {
 
     private static final String TAG = "FileUtil";
 
